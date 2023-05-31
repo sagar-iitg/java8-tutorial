@@ -1,2 +1,7 @@
-package lambda.exmaple1;public class Main {
+package lambda.exmaple1;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(new BookService().getBookInSort());
+    }
 }

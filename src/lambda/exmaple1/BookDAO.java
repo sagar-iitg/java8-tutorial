@@ -10,5 +10,6 @@ public class BookDAO {
         books.add(new Book(10,"Math",400));
         books.add(new Book(11,"Physics",1023));
         books.add(new Book(14,"Chemistry",4000));
+        return books;
     }
 }

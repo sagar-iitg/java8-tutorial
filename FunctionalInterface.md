@@ -11,6 +11,19 @@ Callable - call()<br/>
 Comparable - compareTO()<br/>
 Compartor - compare()<br/>
 
+Predefined Functional Interface in java8
+
+Consumer
+Predicate
+Supplier
+
+
+forEach -- Accepting Consumer interface
+filter --- Predicate interface
+
+
+
+
 
 
 

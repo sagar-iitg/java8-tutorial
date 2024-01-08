@@ -13,6 +13,7 @@ public class Example2 {
                 Arrays.asList(4, 5, 6),
                 Arrays.asList(7, 8, 9)
         );
+        System.out.println(nestedList);
 
         List<Integer> flatList = nestedList.stream()
                 .flatMap(List::stream)

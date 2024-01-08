@@ -13,6 +13,7 @@ public class Example1 {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         int sum = numbers.stream()
                 .filter(n -> n % 2 == 0)
+                //method references
                 .mapToInt(Integer::intValue)
                 .sum();
 

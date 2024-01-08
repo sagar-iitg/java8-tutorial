@@ -24,7 +24,8 @@ public class FindNthLargestSalaryInHashMap {
         map.put("ramesh",10000000);
 
 
-        Map<Integer, List<Map.Entry<String, Integer>>> collect = map.entrySet().stream().collect(Collectors.groupingBy(Map.Entry::getValue));
+        Map<Integer, List<Map.Entry<String, Integer>>> collect = map.entrySet().stream().
+                collect(Collectors.groupingBy(Map.Entry::getValue));
 
         Map.Entry<Integer, List<String>> nthHighestSalaryWithDuplicate = getNthHighestSalaryWithDuplicate(2, map);
         System.out.println(nthHighestSalaryWithDuplicate);

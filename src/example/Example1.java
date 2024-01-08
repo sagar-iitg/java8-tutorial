@@ -17,8 +17,14 @@ public class Example1 {
                 .mapToInt(Integer::intValue)
                 .sum();
 
-
         System.out.println(sum);
+
+        int[] arr={1,2,3,4,5};
+        int sumResult=Arrays.stream(arr).filter(n->n%2==0).sum();
+        System.out.println(sumResult);
+
+
+
 
 
     }

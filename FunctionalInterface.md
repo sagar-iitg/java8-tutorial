@@ -8,7 +8,7 @@ method is called Functional Interface
 
 Runnable - run()<br/>
 Callable - call()<br/>
-Comparable - compareTO()<br/>
+Comparable - compareTO()<br/> Natural Sorting
 Compartor - compare()<br/>
 
 Predefined Functional Interface in java8

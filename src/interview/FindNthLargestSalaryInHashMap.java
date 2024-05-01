@@ -22,6 +22,9 @@ public class FindNthLargestSalaryInHashMap {
         map.put("laxman",700000);
         map.put("ram",700000);
         map.put("ramesh",10000000);
+        map.put("suresh",10000000);
+        map.put("suresh",100000001);
+        System.out.println(map);
 
 
         Map<Integer, List<Map.Entry<String, Integer>>> collect = map.entrySet().stream().

@@ -17,7 +17,9 @@ public class Example1 {
         System.out.println(friendsName);
 
         //The map method of the Stream interface can help us avoid mutability
-        
+        // The map method is useful to map or transform an input collection into a new output collection.
+        friendsName.stream().map(name->name.toUpperCase()).forEach(System.out::println);
+
 
     }
 }

@@ -26,6 +26,7 @@ public class Example3 {
         Map<String, Integer> highScorers = scores.entrySet().stream()
                 .filter(entry -> entry.getValue() > 80)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        System.out.println(highScorers);
 
 
 

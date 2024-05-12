@@ -13,4 +13,8 @@ skip() and dropWhile() functions, the limit() and takeWhile() methods also behav
 
 The Optional class is useful whenever the result may be absent
 
+Streams have two types of methods: intermediate and terminal
+
+
+Exception handling is fundamentally an imperative style of programming idea, 
 

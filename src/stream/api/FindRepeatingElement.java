@@ -15,6 +15,14 @@ class FindRepeatingElement {
                 collect(Collectors.groupingBy(e -> e, Collectors.counting()));
         System.out.println(collect);
 
+        List<Integer> collect1 = Arrays.stream(array).
+                boxed().
+                collect(Collectors.groupingBy(e -> e, Collectors.counting())).entrySet().stream()
+                .filter(e -> e.getValue() == 1).map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+        System.out.println(collect1);
+
+
         // Find and print duplicates
         List<Integer> duplicates = findDuplicates(array);
         System.out.println("Duplicates: " + duplicates);  // Output: Duplicates: [4, 6]

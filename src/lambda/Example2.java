@@ -30,7 +30,7 @@ public class Example2 {
 //        });
 
         //Method 4 -> Increasing O
-        // rder Sorting
+        // order Sorting
 
 //        Collections.sort(names,(String a,String b)->{
 //            return a.compareTo(b);

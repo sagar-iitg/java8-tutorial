@@ -59,7 +59,7 @@ public class Employee {
 
         List<Employee> delhiEmployee = list.stream().
                 filter(e -> "delhi".equalsIgnoreCase(e.getCity())).
-                sorted(Comparator.comparing(Employee::getName).reversed()).toList();
+                sorted( Comparator.comparing(Employee::getName).reversed()  ).toList();
 
         System.out.println(delhiEmployee);
 

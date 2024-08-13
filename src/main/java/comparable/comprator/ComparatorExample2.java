@@ -89,11 +89,11 @@ public class ComparatorExample2 {
         }
 
         // Sort the list based on engine horsepower using a lambda expression
-       // cars.sort(Comparator.comparing((Car car) -> car.getEngine().getHorsepower()).reversed());
-        cars.sort(Comparator.comparing((Car car) -> car.getEngine().getType()));
-        cars.sort(Comparator.comparing((Car car) -> car.getEngine().getType()));
+        cars.sort(Comparator.comparing((Car car) -> car.getEngine().getHorsepower()));
+      //  cars.sort(Comparator.comparing((Car car) -> car.getEngine().getType()));
+     //   cars.sort(Comparator.comparing((Car car) -> car.getEngine().getType()));
 
-      //  cars.sort(Comparator.comparing((Car car) -> car.getEngine().getHorsepower()).reversed());
+      //  cars.sort( Comparator.comparing(  (Car car) -> car.getEngine().getHorsepower()). reversed());
 
         // Print the list after sorting
         System.out.println("\nAfter sorting by engine horsepower:");

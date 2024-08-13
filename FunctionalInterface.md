@@ -24,7 +24,13 @@ filter --- Predicate interface
 
 
 
+Supplier: No parameters, returns a value.
 
+Runnable: No parameters, no return value (often used in threading).
+
+BiFunction: Takes two parameters, returns a value.
+
+Consumer: Takes one parameter, no return value.
 
 
 

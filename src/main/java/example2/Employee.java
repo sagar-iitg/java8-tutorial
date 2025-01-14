@@ -1,8 +1,14 @@
 package example2;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
+
+@AllArgsConstructor
+@NoArgsConstructor
 public class Employee {
 
 
@@ -10,11 +16,6 @@ public class Employee {
     private String name;
     private String city;
 
-    public Employee(int id, String name, String city) {
-        this.id = id;
-        this.name = name;
-        this.city = city;
-    }
 
     public String getCity() {
         return city;

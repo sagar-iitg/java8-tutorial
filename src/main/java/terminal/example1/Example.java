@@ -27,7 +27,11 @@ public class Example {
                 new Employee(3, "Bob", 55000)
         );
 
-        Optional<Employee> firstEmp = employees.stream().filter(e -> e.getSalary() > 59999).findFirst();
+        Optional<Employee> firstEmp =
+                employees.stream().
+                filter(e -> e.getSalary() > 59999).
+                findFirst();
+
         System.out.println(firstEmp.get());
 
 

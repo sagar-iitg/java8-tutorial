@@ -9,7 +9,7 @@ public class Example3 {
         List<String> words = Arrays.asList("", "  ", "Java", "Stream", "API");
 
         Optional<String> firstNonEmpty = words.stream()
-                .filter(word -> !word.trim().isEmpty())
+                .filter(word -> !word.isEmpty())
                 .findFirst();
 
         firstNonEmpty.ifPresent(word ->

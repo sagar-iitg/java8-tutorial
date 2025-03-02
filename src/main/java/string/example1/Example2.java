@@ -9,9 +9,9 @@ import java.util.stream.IntStream;
 public class Example2 {
     public static void main(String[] args) {
         int n=4;
-        List<List<String>> board = IntStream.range(0, n)
-                .mapToObj(i -> new ArrayList<>(Collections.nCopies(n, ".")))
-                .collect(Collectors.toList());
-        System.out.println(board);
+        List<List<String>> list = IntStream.range(0, n).
+                mapToObj(i -> new ArrayList<>(Collections.nCopies(n, "."))).
+                collect(Collectors.toList());
+        System.out.println(list);
     }
 }

@@ -84,9 +84,7 @@ public class ComparatorExample2 {
 
         // Print the list before sorting
         System.out.println("Before sorting:");
-        for (Car car : cars) {
-            System.out.println(car);
-        }
+        cars.forEach(System.out::println);
 
         // Sort the list based on engine horsepower using a lambda expression
         cars.sort(Comparator.comparing((Car car) -> car.getEngine().getHorsepower()));

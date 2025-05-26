@@ -43,20 +43,16 @@ class ComparatorExample {
 
         // Print the list before sorting
         System.out.println("Before sorting:");
-        for (Human person : people) {
-            System.out.println(person);
-        }
+        people.forEach(System.out::println);
 
         // Sort the list using a lambda expression
         //Collections.sort(people, Comparator.comparingInt(Human::getAge));
         Collections.sort(people, Comparator.comparing(Human::getAge));
-       // Collections.sort(people, Comparator.comparing(Human::getName));
+        //Collections.sort(people, Comparator.comparing(Human::getName));
         //Collections.sort(people, Comparator.comparing(h->h.getName()));
 
         // Print the list after sorting
         System.out.println("\nAfter sorting by age:");
-        for (Human person : people) {
-            System.out.println(person);
-        }
+        people.forEach(System.out::println);
     }
 }

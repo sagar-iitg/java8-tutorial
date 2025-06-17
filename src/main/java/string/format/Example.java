@@ -6,9 +6,9 @@ public class Example {
         String result = String.format("%d", num);
         System.out.println(result);
         int m = 5;
-        System.out.println(String.format("%03d", m));
+        System.out.printf("%03d%n", m);
         double pi = 3.14159265359;
-        System.out.println(String.format("%.4f", pi)); // Output: Pi: 3.14
+        System.out.printf("%.4f%n", pi); // Output: Pi: 3.14
 
 
 

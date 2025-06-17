@@ -16,6 +16,7 @@ public class Example {
         people.put("stece",List.of("58757","44"));
         people.put("biden",List.of("47474","487474"));
         people.put("putin",List.of("98474","1234"));
+        System.out.println(people);
 
         List<String> list = people.values().stream().flatMap(Collection::stream).toList();
         System.out.println(list);

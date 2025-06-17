@@ -27,6 +27,8 @@ public class ExampleHashMap {
         System.out.println(list);
 
         list.sort(Map.Entry.comparingByKey());
+        System.out.println(list);
+
         LinkedHashMap<Character,Integer> sortedMap=new LinkedHashMap<>();
         for(Map.Entry<Character,Integer> entry:list)
         {

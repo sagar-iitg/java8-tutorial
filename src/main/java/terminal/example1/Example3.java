@@ -11,10 +11,11 @@ public class Example3 {
         Optional<String> firstNonEmpty = words.stream()
                 .filter(word -> !word.isEmpty())
                 .findFirst();
+        System.out.println(firstNonEmpty.isEmpty());
 
         firstNonEmpty.ifPresent(word ->
                 System.out.println("First non-empty string: " + word));
         System.out.println(firstNonEmpty.isPresent());
-       firstNonEmpty.ifPresent(x-> System.out.println(x));
+       firstNonEmpty.ifPresent(System.out::println);
     }
 }

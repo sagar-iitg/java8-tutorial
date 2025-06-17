@@ -7,11 +7,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-@Getter
-@Setter
-@ToString
+
+@Data
 @AllArgsConstructor
-@NoArgsConstructor
 class Employee {
 
 

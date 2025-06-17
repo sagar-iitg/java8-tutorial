@@ -18,7 +18,6 @@ public class ArrayListToIntArray {
         list.add(new ArrayList<>(Arrays.asList(1, 1, 1, 1)));
         System.out.println(list);
 
-
         int[][] array = list.stream().
                 map(row -> row.stream().mapToInt(x -> x).toArray()).
                 toArray(int[][]::new);

@@ -10,6 +10,7 @@ package epam;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Q1 {
     public static void main(String[] args) {
@@ -21,6 +22,10 @@ public class Q1 {
         System.out.println(collect1);
 
         String collect2 = Arrays.stream(s.split("")).distinct().collect(Collectors.joining());
+        long count = Arrays.stream(s.split("")).distinct().count();
+        System.out.println(count);
+
+
         System.out.println(collect2);
 
 

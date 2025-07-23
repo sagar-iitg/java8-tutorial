@@ -17,6 +17,8 @@ public class DuplicateElementInList {
                 collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet().stream().filter(e -> e.getValue()>1).map(Map.Entry::getKey).
                 collect(Collectors.toList());
+
+
         System.out.println(collect);
     }
 }
